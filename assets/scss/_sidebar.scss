@@ -1,0 +1,13 @@
+.left-sidebar {
+    margin-bottom: $gap * 5.33333;
+    .panel:last-of-type {
+        margin-bottom: 0 ;
+    }
+}
+.vertical-slider {
+    border-radius: 4px;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}
