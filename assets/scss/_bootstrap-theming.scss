@@ -1,5 +1,5 @@
 .navbar-inverse {
-    background-color: #191919;
+    background-color: darken($color-dark, 4%);
     margin: 0;
 }
 .navbar-inverse .navbar-nav {
@@ -45,6 +45,21 @@
         margin-bottom: 0;
     }
 }
+.nav-tabs {
+    margin-bottom: $gap;
+    
+    > li  {
+        > a {
+            background-color: $color-gray;
+        }
+        &.active > a,
+        &.active > a:focus,
+        &.active > a:hover {
+            background-color: darken(#ffffff, 3%);
+        }
+    }
+}
+
 .navbar-right {
     > li {
         @include sm-min {
@@ -59,8 +74,8 @@
     border: none;
     background-color:darken($color-light, 8%);
     &-info {
+        
         .panel-heading {
-            
             border: none;
             background-color: $color-accent;
             color: $color-light;
@@ -90,4 +105,8 @@
         font-size: 0.875rem;
         
     }
+}
+.row:before {
+    display: table;
+    content: " ";
 }

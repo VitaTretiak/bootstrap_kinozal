@@ -34,6 +34,20 @@
   margin-right: 0;
 }
 
+.nav-tabs {
+  margin-bottom: 15px;
+}
+
+.nav-tabs > li > a {
+  background-color: #dddddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #f7f7f7;
+}
+
 .panel {
   border: none;
   background-color: #ebebeb;
@@ -69,6 +83,11 @@
   font-size: 0.875rem;
 }
 
+.row:before {
+  display: table;
+  content: " ";
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -77,6 +96,10 @@ html {
 body {
   font-size: 1rem;
   font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: #165690;
 }
 
 header {
