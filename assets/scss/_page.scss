@@ -1,0 +1,39 @@
+.film-info
+{
+    font-size: 1.2rem;
+    
+    &__badge
+    {
+        font-size: .8em;
+    }
+    
+    &__well
+    {
+        text-align: center;
+    }
+    
+    &__wrapper
+    {
+        white-space: nowrap;
+        &:not(:last-of-type)
+        {
+            margin-right: $gap;
+        }
+    }
+}
+
+.film-descr
+{
+    .well
+    {
+        border-radius: 5px;
+    }
+}
+
+.film-feedback
+{
+    &__button
+    {
+        float: right;
+    }
+}

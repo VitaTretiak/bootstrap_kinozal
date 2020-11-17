@@ -1,0 +1,68 @@
+.top-rate
+{
+    &-body
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    &-list
+    {
+        margin-bottom: 0;
+    }
+    
+    &-item
+    {
+        margin-right: -1px;
+        margin-left: -1px;
+        padding: 0;
+        
+        border-top: 1px solid $color-gray;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        background-color: transparent;
+        
+        a
+        {
+            display: block;
+            
+            padding: 10px 50px 10px $gap;
+        }
+        
+        &:first-child
+        {
+            border-top: none;
+            border-radius: 0;
+        }
+        
+        &:last-child
+        {
+            border-radius: 0;
+        }
+        
+        &:hover
+        {
+            background-color: $color-accent;
+            
+            a
+            {
+                color: $color-light;
+            }
+            
+            .badge
+            {
+                background-color: $color-dark;
+            }
+        }
+    }
+    
+    &-badge
+    {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        
+        transform: translateY(-50%);
+    }
+}

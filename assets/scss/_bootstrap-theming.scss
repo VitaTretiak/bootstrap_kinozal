@@ -1,112 +1,139 @@
-.navbar-inverse {
-    background-color: darken($color-dark, 4%);
+.navbar-inverse
+{
     margin: 0;
-}
-.navbar-inverse .navbar-nav {
     
-    > .active > a {
-        
-        background-color: $color-primary-dark;
-        
-        &:hover,
-        &:focus {
-            background-color: $color-primary-light;
-        } 
-    }
-    > li > a {
-        transition: background-color 0.5s;
-        @include sm-min {
-            border-radius: 4px;
-        }
-        @include sm {
-            text-align: center;
-        }
-        &:focus,
-        &:hover
+    background-color: darken($color-dark, 4%);
+    
+    .navbar-nav
+    {
+        > .active > a
         {
-            background-color: $color-primary;
+            background-color: $color-primary-dark;
+            
+            &:focus,
+            &:hover
+            {
+                background-color: $color-primary-light;
+            }
+        }
+        
+        > li > a
+        {
+            transition: background-color .5s;
+            
+            @include sm-min
+            {
+                border-radius: 4px;
+            }
+            @include sm
+            {
+                text-align: center;
+            }
+            
+            &:focus,
+            &:hover
+            {
+                background-color: $color-primary;
+            }
         }
     }
 }
-.navbar-header {
+
+.navbar-header
+{
     text-align: center;
 }
-.navbar-toggle {
+
+.navbar-toggle
+{
     float: none;
+    
     margin-right: 0;
 }
-.navbar-left {
-    > li {
-        @include sm-min {
+
+
+
+
+.navbar-left
+{
+    @include sm-min
+    {
+        > li
+        {
             margin: 5px 5px 5px 0;
         }
     }
-    @include sm {
+    @include sm
+    {
         margin-bottom: 0;
     }
 }
-.nav-tabs {
-    margin-bottom: $gap;
-    
-    > li  {
-        > a {
-            background-color: $color-gray;
-        }
-        &.active > a,
-        &.active > a:focus,
-        &.active > a:hover {
-            background-color: darken(#ffffff, 3%);
-        }
-    }
-}
 
-.navbar-right {
-    > li {
-        @include sm-min {
-            margin: 5px 0 5px 5px ;
+.navbar-right
+{
+    @include sm-min
+    {
+        > li
+        {
+            margin: 5px 0 5px 5px;
         }
     }
-    @include sm {
+    @include sm
+    {
         margin-top: 0;
     }
 }
-.panel {
+
+.panel
+{
+    margin-bottom: $gap * 2;
+    
     border: none;
-    background-color:darken($color-light, 8%);
-    &-info {
-        
-        .panel-heading {
+    background-color: lighten($color-gray, 8%);
+    
+    &-info
+    {
+        > .panel-heading
+        {
+            color: $color-light;
             border: none;
             background-color: $color-accent;
-            color: $color-light;
-            font-size: 1.2rem;
-            letter-spacing: 0.1em;
         }
     }
-    &-body {
-        border: 1px solid $color-gray;
-        border-radius: 0 0 4px 4 px;
+    
+    &-title
+    {
+        font-size: 1.2rem;
+        
+        letter-spacing: .1em;
     }
-}
-.panel-body {
-    padding: 15px;
+    
+    &-body
+    {
+        border: 1px solid $color-gray;
+        border-radius: 0 0 4px 4px;
+    }
 }
 
-.input-lg {
-    height: 46px;
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-}
-.input {
+.input
+{
     &-lg,
-    &-group-lg > .form-control {
-        font-size: 0.875rem;
-        
+    &-group-lg > .form-control
+    {
+        font-size: .875rem;
     }
 }
-.row:before {
-    display: table;
-    content: " ";
+
+.embed-responsive
+{
+    border: 1px solid $color-gray;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.well
+{
+    border: 1px solid $color-gray;
+    border-radius: 0 0 5px 5px;
+    background-color: darken($color-light, 5.5%);
 }

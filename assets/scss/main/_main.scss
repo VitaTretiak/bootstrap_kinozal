@@ -1,0 +1,66 @@
+.main
+{
+    @extend %margin-bottom-lg;
+    
+    .site-search
+    {
+        margin: -$gap 0 $gap * 3;
+    }
+    
+    .user-login
+    {
+        margin-bottom: $gap * 4;
+    }
+}
+
+.film-news-item
+{
+    .thumbnail
+    {
+        margin-bottom: 0;
+        
+        transition: background-color .25s;
+    }
+    
+    &__text
+    {
+        text-align: justify;
+    }
+    
+    &__image
+    {
+        width: 100%;
+    }
+    
+    &__button
+    {
+        float: right;
+        
+        margin-bottom: ($gap * 2);
+        
+        transition: background-color .25s;
+    }
+    
+    &:hover
+    {
+        .thumbnail
+        {
+            background-color: lighten($color-accent, 15%);
+        }
+        
+        h3 > a
+        {
+            color: $color-accent;
+        }
+        
+        .btn-warning
+        {
+            background-color: $color-accent;
+        }
+    }
+    
+    h3 > a
+    {
+        transition: color .25s;
+    }
+}

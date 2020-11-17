@@ -9,7 +9,10 @@
 
 @import "common";
 @import "header";
-@import "main";
+@import "main/main";
+@import "main/new-films-top";
 @import "page";
-@import "sidebar";
+@import "sidebar/sidebar";
+@import"sidebar/site-news";
+@import"sidebar/top-rate";
 @import "footer";

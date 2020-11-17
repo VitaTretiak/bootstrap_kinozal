@@ -1,11 +1,83 @@
-html {
+html
+{
     font-size: $font-size;
+    
     overflow-y: scroll;
 }
-body {
-    font-size: 1rem;
+
+body
+{
     font-family: $font-main;
+    font-size: 1rem;
 }
-a {
+
+section
+{
+    position: relative;
+    
+    overflow: hidden;
+}
+
+a
+{
     color: $color-primary;
+    
+    &:hover,
+    &:focus
+    {
+        text-decoration: none;
+        
+        color: $color-accent;
+    }
+}
+
+h1
+{
+    font-family: $font-header;
+    
+    margin: (-$gap / 2) 0 ($gap * 3);
+    
+    @include xs-min
+    {
+        font-size: 3rem;
+    }
+    @include xs
+    {
+        font-size: 2rem;
+    }
+    @extend %after-divider;
+}
+
+h2
+{
+    font-family: $font-header;
+    
+    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+    
+    @include xs-min
+    {
+        font-size: 2.5rem;
+    }
+    @include xs
+    {
+        font-size: 1.75rem;
+    }
+    @extend %bef-aft-divider;
+}
+
+h3
+{
+    @include xs-min
+    {
+        font-size: 1.5rem;
+    }
+    @include xs
+    {
+        font-size: 1.25rem;
+    }
+}
+
+h4
+{
+    color: darken($color-light, 1.5%);
 }
